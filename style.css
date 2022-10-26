@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'SF Pro Display';
+}
+
+.container {
+    width: 1280px;
+    text-align: center;
+    margin: 50px auto;
+}
+
+header a {
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 30px;  
+    text-decoration: none;
+    color: #A5A5B4;
+}
+
+.active {
+    margin-right: 80px;
+    color: #FFC700;
+}
+
+.hi {
+    margin-top: 60px;
+    margin-bottom: 80px;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 30px;
+    text-align: center;
+    color: #000000;
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 59px;
+    text-align: center;
+    color: #000000;
+    margin-bottom: 40px;
+}
+
+.whichDay {
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 30px;
+    text-align: center;
+    color: #FFC700;
+    margin-bottom: 35px;
+}
+
+.box {
+    background: #F0F0F0;
+    border-radius: 15px;
+    width: 629px;
+    height: 123px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.head {
+    display: flex;
+    width: 130px;
+    justify-content: space-between;
+}
+
+.head p {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+    color: #000000;
+}
+
+.dsc {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #A5A5B4;
+}
+
+.day {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFC700;
+}
+
+input {
+    background: #F0F0F0;
+    border: 1px solid #999999;
+    border-radius: 3px;
+    background-color: transparent;
+}
+
+.add_box, .add_box2, .add_box3 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 100px;
+}
+
+label {
+	cursor: pointer;
+}
+
+/* *********************************
+Чекбоксы
+********************************* */
+
+.real-checkbox {
+	width: 0;
+	height: 0;
+	opacity: 0;
+	position: absolute;
+	z-index: -1;
+    display: none;
+}
+
+.custom-checkbox {
+	position: relative;
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	background: transparent;
+    border: 1px solid #999999;
+    border-radius: 3px;
+	vertical-align: sub;
+	margin-right: 5px;
+}
+
+.real-checkbox:checked + .custom-checkbox {
+    background-color: #FFC700;
+    border: none;
+}
